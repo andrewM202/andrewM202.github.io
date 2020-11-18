@@ -10,4 +10,4 @@ Resume
 Past Projects
 
 <!-- Footer -->
-Contact me at: andrewm1246@gmail.com
+Contact me at: andrewm1246@gmail.com   GitHub at https://github.com/andrewM202

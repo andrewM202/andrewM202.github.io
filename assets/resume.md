@@ -1,5 +1,8 @@
-<!-- Header -->
+<!-- Header: links to other pages as well -->
 Andrew Matt
+Random Facts
+About Me
+Past Projects
 
 <!-- Body content -->
 For those interested, my current resume is below
