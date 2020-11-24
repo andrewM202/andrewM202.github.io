@@ -3,12 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <title>About Me</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <h1>Andrew Matt</h1>
-    </header>
+    <div class="flex-container">
+      <img src="assets/svgs/green-corner-3.svg" />
+      <header>
+        <h1>Andrew Matt</h1>
+      </header>
+      <img src="assets/svgs/green-corner-3.svg" class="top-right" />
+    </div>
 
     <!-- Main content -->
     <main>
@@ -24,18 +29,24 @@
 
       <!-- Cards to click on -->
       <nav>
-        <a href="random-facts.html">Random Facts</a>
-        <a href="resume.html">Resume</a>
-        <a href="past-projects.html">Past Projects</a>
+        <div><a href="random-facts.html">Random Facts</a></div>
+        <div><a href="resume.html">Resume</a></div>
+        <div><a href="past-projects.html">Past Projects</a></div>
       </nav>
     </main>
 
     <!-- Footer -->
-    <footer>
-      <address>
-        Contact me with <a href="mailto:andrewm1246@gmail.com">email</a>
-      </address>
-      Search through my <a href="https://github.com/andrewM202">GitHub</a>
-    </footer>
+    <div class="flex-container">
+      <img src="assets/svgs/green-corner-3.svg" class="bottom-left" />
+      <footer>
+        <address>
+          Contact me with <a href="mailto:andrewm1246@gmail.com">email</a>
+        </address>
+        <p>
+          Search through my <a href="https://github.com/andrewM202">GitHub</a>
+        </p>
+      </footer>
+      <img src="assets/svgs/green-corner-3.svg" class="bottom-right" />
+    </div>
   </body>
 </html>
