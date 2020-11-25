@@ -3,19 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <title>Resume</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Header: links to other pages as well -->
-    <header>
-      <h1>Andrew Matt</h1>
-      <nav>
-        <ul>
-          <li><a href="random-facts.html">Random Facts</a></li>
-          <li><a href="index.html">About Me</a></li>
-          <li><a href="past-projects.html">Past Projects</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="flex-container">
+      <img src="assets/svgs/green-corner-3.svg" />
+      <header>
+        <h1>Andrew Matt</h1>
+        <nav>
+          <ul>
+            <li><a href="random-facts.html">Random Facts</a></li>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="past-projects.html">Past Projects</a></li>
+          </ul>
+        </nav>
+      </header>
+      <img src="assets/svgs/green-corner-3.svg" class="top-right"/>
+    </div>
 
     <!-- Body content -->
     <main>
@@ -86,10 +91,14 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-      <address>
-        Contact me with <a href="mailto:andrewm1246@gmail.com">email</a>
-      </address>
-    </footer>
+    <div class="flex-container">
+      <img src="assets/svgs/green-corner-3.svg" class="bottom-left"/>
+      <footer>
+        <address>
+          Contact me with <a href="mailto:andrewm1246@gmail.com">email</a>
+        </address>
+      </footer>
+      <img src="assets/svgs/green-corner-3.svg" class="bottom-right"/>
+    </div>
   </body>
 </html>

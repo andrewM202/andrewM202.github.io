@@ -1,0 +1,134 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: 'sans-serif';
+  src: url('assets/OpenSans-Regular-webfont.woff') format('woff');
+}
+
+body {
+  font-family: 'sans-serif', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  background-color: #d2f6c5;
+}
+
+.flex-container {
+  display: flex;
+}
+
+header,
+footer {
+  height: 10vh;
+  width: 60vw;
+  background-color: #28df99;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  margin: 0px auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 30vw;;
+}
+
+footer {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-around
+}
+
+img {
+  width: 20vw;
+  height: 30vh;
+}
+
+.top-right {
+  transform: scaleX(-1);
+}
+
+.bottom-left {
+  transform: scaleY(-1);
+}
+
+.bottom-right {
+  transform: scaleX(-1) scaleY(-1);
+}
+
+main {
+  width: 60vw;
+  background-color: #d2f6c5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  margin: 0px auto;
+}
+
+main h2,
+main h3 {
+  text-align: center;
+}
+
+main article {
+  background-color: #99f3bd;
+  width: 60vw;
+  padding: 10px;
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 30px;
+}
+
+main nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60vw;
+  margin-top: 100px;
+}
+
+main nav a {
+  text-decoration: none;
+}
+
+.button {
+  background-color: orange;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+main nav div {
+  width: 150px;
+  height: 150px;
+  background-color: #99f3bd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
