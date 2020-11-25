@@ -50,20 +50,27 @@
       "After a few seasons of it, I have gradually found that an Amish chicken barbeque is my favorite food.",
       "My favorite sweet is and always has been jelly beans.",
       "On a given weekend, you can often find me fishing at a stream or hiking in the woods with friends.",
-      "Throughout my childhood, my favorite T.V. show was always Avatar TheLast Airbender.",
+      "Throughout my childhood, my favorite T.V. show was always Avatar The Last Airbender.",
       "My favorite movie is Interstellar, which came out in 2014. I loved its science, plot, and mesmerizing visuals", "I have two siblings, a brother and a sister."];
 
       //Create number to set index of current fact, set default to random fact
-      let currentFact = factArray[Math.round(Math.random() * factArray.length)];
+      let currentFact = factArray[Math.round(Math.random() * (factArray.length - 1))];
 
       //Selector for display area
       let displayArea = document.querySelector('.fact-display p');
-      displayArea.textContent = factArray[Math.round(Math.random() * factArray.length)];
+      displayArea.textContent = currentFact;
 
       //Create event listener for random facts button
       let randomFactButton = document.querySelector('.button');
       randomFactButton.addEventListener("click", () => {
-          currentFact = Math.round(Math.random() * factArray.length);
+          let randomNumber = Math.round(Math.random() * (factArray.length - 1))
+
+          //Makes sure the previous random fact is never displayed twice
+          while(randomNumber === currentFact) {
+            randomNumber = Math.round(Math.random() * (factArray.length - 1));
+          }
+          currentFact = randomNumber;
+
           displayArea.textContent = factArray[currentFact];
       });
 

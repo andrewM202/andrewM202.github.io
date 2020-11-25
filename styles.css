@@ -72,6 +72,8 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: 1.3em;
+  padding: 50px 50px;
 }
 
 main {
@@ -94,7 +96,8 @@ main article {
   background-color: #99f3bd;
   width: 60vw;
   padding: 10px;
-  font-size: 1.3em;
+  font-size: 1.6em;
+  line-height: 1.4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,6 +136,21 @@ section {
   padding: 30px 0;
 }
 
+section p {
+  margin-top: 100px;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+h3 {
+  padding-top: 30px;
+  font-size: 1.5em;
+}
+
+main h2 {
+  font-size: 1.6em;
+}
+
 main nav div {
   width: 150px;
   height: 150px;
@@ -141,4 +159,65 @@ main nav div {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.green-dividing-block {
+  height: 10vh;
+  width: 60vw;
+  background-color: #28df99;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  margin: 0px auto;
+}
+
+section img {
+  height: 350px;
+  width: auto;
+  margin: 50px 0;
+}
+
+@media (max-width: 1080px) {
+  header {
+    position: absolute;
+    width: 100vw;
+    flex: 1;
+  }
+  footer {
+    position: absolute;
+    width: 100vw;
+    flex: 1;
+  }
+  .top-left,
+  .top-right {
+    position: relative;
+    top: 10vh;
+  }
+  .top-right,
+  .bottom-right {
+    left: 60vw;
+  }
+  .bottom-right,
+  .bottom-left {
+    position: relative;
+    bottom: 10vh;
+  }
+  .flex-container {
+    position: absolute;
+    flex-wrap: wrap;
+  }
+  article,nav {
+    margin-top: 250px;
+  }
+  img[src="assets/svgs/green-corner-3.svg"] {
+    height: 300px;
+  }
+  main nav {
+    flex-direction: column;
+  }
+  main nav div {
+    width: 60vw;
+    margin-bottom: 30px;
+  }
 }
