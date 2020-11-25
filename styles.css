@@ -64,6 +64,16 @@ img {
   transform: scaleX(-1) scaleY(-1);
 }
 
+.fact-display {
+  width: 60vw;
+  height: 300px;
+  background-color: #28df99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 main {
   width: 60vw;
   background-color: #d2f6c5;
