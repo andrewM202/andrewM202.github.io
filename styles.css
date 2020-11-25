@@ -7,12 +7,12 @@
 }
 
 @font-face {
-  font-family: 'sans-serif';
-  src: url('assets/OpenSans-Regular-webfont.woff') format('woff');
+  font-family: "sans-serif";
+  src: url("assets/OpenSans-Regular-webfont.woff") format("woff");
 }
 
 body {
-  font-family: 'sans-serif', sans-serif;
+  font-family: "sans-serif", sans-serif;
   font-size: 1.2em;
   line-height: 1.8em;
   background-color: #d2f6c5;
@@ -34,17 +34,21 @@ footer {
   margin: 0px auto;
 }
 
+header > nav {
+  width: 30%;
+}
+
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  width: 30vw;;
+  width: 50%;
 }
 
 footer {
   align-self: flex-end;
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
 }
 
 img {
@@ -180,42 +184,69 @@ section img {
 
 @media (max-width: 1080px) {
   header {
+    flex-direction: column;
     position: absolute;
     width: 100vw;
     flex: 1;
   }
+
   footer {
     position: absolute;
     width: 100vw;
     flex: 1;
   }
+
   .top-left,
   .top-right {
     position: relative;
     top: 10vh;
   }
+
   .top-right,
   .bottom-right {
     left: 60vw;
   }
+
   .bottom-right,
   .bottom-left {
     position: relative;
     bottom: 10vh;
   }
+
   .flex-container {
     position: absolute;
     flex-wrap: wrap;
   }
-  article,nav {
+
+  article {
     margin-top: 250px;
   }
+
+  nav ul a {
+    padding: 0 20px;
+  }
+
+  nav ul {
+    width: 100px;
+  }
+
+  main > h2 {
+    margin-top: 250px;
+  }
+
   img[src="assets/svgs/green-corner-3.svg"] {
     height: 300px;
   }
+
   main nav {
     flex-direction: column;
   }
+
+  section footer {
+    position: relative;
+    top: 50px;
+  }
+
   main nav div {
     width: 60vw;
     margin-bottom: 30px;
