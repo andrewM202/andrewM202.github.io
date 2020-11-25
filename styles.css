@@ -267,7 +267,7 @@ img {
   }
 
   img[src="assets/svgs/green-corner-3.svg"] {
-    height: 20vh;;
+    height: 20vh;
   }
 
   main nav {
@@ -277,6 +277,7 @@ img {
   main article {
     width: 80vw;
     margin-bottom: 100px;
+    margin-top: 150px;
   }
 
   section footer {
@@ -290,8 +291,7 @@ img {
   }
 
   main > h2 {
-    position: relative;
-    top: 200px;
+    margin-top: 150px;
   }
 
   .green-dividing-block {
