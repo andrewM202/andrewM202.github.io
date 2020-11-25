@@ -18,6 +18,13 @@ body {
   background-color: #d2f6c5;
 }
 
+/* Header CSS */
+
+header nav ul > li {
+  margin-right: 30px;
+  text-align: center;
+}
+
 .flex-container {
   display: flex;
 }
@@ -42,31 +49,10 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  align-items: center;
 }
 
-footer {
-  align-self: flex-end;
-  display: flex;
-  justify-content: space-around;
-}
-
-img {
-  width: 20vw;
-  height: 30vh;
-}
-
-.top-right {
-  transform: scaleX(-1);
-}
-
-.bottom-left {
-  transform: scaleY(-1);
-}
-
-.bottom-right {
-  transform: scaleX(-1) scaleY(-1);
-}
+/* Body CSS */
 
 .fact-display {
   width: 60vw;
@@ -96,17 +82,20 @@ main h3 {
   text-align: center;
 }
 
+main h2 {
+  padding-bottom: 30px;
+}
+
 main article {
   background-color: #99f3bd;
   width: 60vw;
-  padding: 10px;
+  padding: 30px 30px;
   font-size: 1.6em;
   line-height: 1.4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 150px 30px;
 }
 
 main nav {
@@ -151,7 +140,7 @@ h3 {
   font-size: 1.5em;
 }
 
-main h2 {
+main > h2 {
   font-size: 1.6em;
 }
 
@@ -182,12 +171,51 @@ section img {
   margin: 50px 0;
 }
 
+article ul {
+  padding: 0 30px;
+}
+
+main article h3 {
+  padding: 50px 0;
+}
+
+/* Footer CSS */
+
+footer {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* SVG CSS */
+
+.top-right {
+  transform: scaleX(-1);
+}
+
+.bottom-left {
+  transform: scaleY(-1);
+}
+
+.bottom-right {
+  transform: scaleX(-1) scaleY(-1);
+}
+
+img {
+  width: 20vw;
+  height: 30vh;
+}
+
 @media (max-width: 1080px) {
   header {
     flex-direction: column;
     position: absolute;
     width: 100vw;
     flex: 1;
+  }
+
+  header nav ul {
+    margin: 0px auto;
   }
 
   footer {
@@ -230,16 +258,25 @@ section img {
     width: 100px;
   }
 
-  main > h2 {
-    margin-top: 250px;
+  main article > h2 {
+    font-size: 1em;
+  }
+
+  main article > h3 {
+    font-size: 1.3em;
   }
 
   img[src="assets/svgs/green-corner-3.svg"] {
-    height: 300px;
+    height: 20vh;;
   }
 
   main nav {
     flex-direction: column;
+  }
+
+  main article {
+    width: 80vw;
+    margin-bottom: 100px;
   }
 
   section footer {
@@ -250,5 +287,23 @@ section img {
   main nav div {
     width: 60vw;
     margin-bottom: 30px;
+  }
+
+  main > h2 {
+    position: relative;
+    top: 200px;
+  }
+
+  .green-dividing-block {
+    width: 100vw;
+  }
+
+  section:last-child div {
+    visibility: hidden;
+  }
+
+  section > p {
+    font-size: 1.7em;
+    padding: 0 20px;
   }
 }
