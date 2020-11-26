@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: "sans-serif", sans-serif;
+  font-family: "sans-serif", Arial, Helvetica;
   font-size: 1.2em;
   line-height: 1.8em;
   background-color: #d2f6c5;
@@ -231,7 +231,7 @@ img {
   .top-left,
   .top-right {
     position: relative;
-    top: 10vh;
+    top: 100px;
   }
 
   .top-right,
@@ -241,8 +241,12 @@ img {
 
   .bottom-right,
   .bottom-left {
-    position: relative;
-    bottom: 5.5vh;
+    position: absolute;
+    bottom: -150px;
+  }
+
+  .bottom-right {
+    left: 80vw;
   }
 
   article {
