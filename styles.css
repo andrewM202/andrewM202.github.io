@@ -31,7 +31,7 @@ header nav ul > li {
 
 header,
 footer {
-  height: 10vh;
+  height: 100px;
   width: 60vw;
   background-color: #28df99;
   display: flex;
@@ -200,8 +200,10 @@ footer {
 
 img {
   width: 20vw;
-  height: 30vh;
+  height: 300px;
 }
+
+/* Media Query CSS */
 
 @media (max-width: 1080px) {
   header {
