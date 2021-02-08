@@ -186,6 +186,11 @@ footer {
 
 /* SVG CSS */
 
+.top-left,
+.bottom-left {
+  
+}
+
 .top-right {
   transform: scaleX(-1);
 }
